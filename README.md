@@ -1,6 +1,6 @@
 # Electric Heater
-This is a heater control system, where the tempreture is controlled to the desired value by means of heating and cooling systems.
-This project is implemented using PIC16F877A microcontroller, and run on PICGenios simulator.
+This is a heater control system, where the tempreture is controlled to the desired value by means of heating and cooling systems.<br>
+This project is implemented using PIC16F877A microcontroller, and run on PICSimLab simulator.<br>
 All code is written in C.
 
 ## Layout

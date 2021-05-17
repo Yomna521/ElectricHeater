@@ -1,0 +1,605 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"11 C:\Users\Admin\MPLABXProjects\Electric Heater.X/ADC.h
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"23 C:\Users\Admin\MPLABXProjects\Electric Heater.X/I2C_EEPROM.h
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"31
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"34
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"38
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+"42
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"46
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"53
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+"62
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+"72
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"83
+[v _EEPROM_Read EEPROM_Read `(v  1 e 1 0 ]
+"40 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Init.h
+[v _ButtonsInit ButtonsInit `(v  1 e 1 0 ]
+"45
+[v _LEDInit LEDInit `(v  1 e 1 0 ]
+"48
+[v _SevenSegInit SevenSegInit `(v  1 e 1 0 ]
+"57
+[v _ADCInit ADCInit `(v  1 e 1 0 ]
+"61
+[v _ElementInit ElementInit `(v  1 e 1 0 ]
+"67
+[v _Timer1Init Timer1Init `(v  1 e 1 0 ]
+"76
+[v _Timer2Init Timer2Init `(v  1 e 1 0 ]
+"84
+[v _OnOff_Int_Init OnOff_Int_Init `(v  1 e 1 0 ]
+"88
+[v _SysInit SysInit `(v  1 e 1 0 ]
+"12 C:\Users\Admin\MPLABXProjects\Electric Heater.X/ISRs.h
+[v _ISR ISR `II(v  1 e 1 0 ]
+"24 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _SaveTemp SaveTemp `(v  1 e 1 0 ]
+"28
+[v _FetchTemp FetchTemp `(v  1 e 1 0 ]
+"31
+[v _TempDisplay TempDisplay `(v  1 e 1 0 ]
+"50
+[v _CurrentTempDisplay CurrentTempDisplay `(v  1 e 1 0 ]
+"64
+[v _TempSet TempSet `(i  1 e 2 0 ]
+"85
+[v _AverageTemp AverageTemp `(v  1 e 1 0 ]
+"111
+[v _TempSensor TempSensor `(v  1 e 1 0 ]
+"116
+[v _SettingMode SettingMode `(v  1 e 1 0 ]
+"135
+[v _HeatingCoolingElement HeatingCoolingElement `(v  1 e 1 0 ]
+[v i1_HeatingCoolingElement HeatingCoolingElement `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 C:\Users\Admin\MPLABXProjects\Electric Heater.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Users\Admin\MPLABXProjects\Electric Heater.X/ADC.h
+[v _ADCResult ADCResult `ui  1 e 2 0 ]
+"26 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Init.h
+[v _binary_pattern binary_pattern `[10]uc  1 e 10 0 ]
+"4 C:\Users\Admin\MPLABXProjects\Electric Heater.X/ISRs.h
+[v _value value `i  1 e 2 0 ]
+"5
+[v _count count `i  1 e 2 0 ]
+"6
+[v _Flag Flag `i  1 e 2 0 ]
+"5 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _Temp Temp `ui  1 e 2 0 ]
+"6
+[v _currentTemp currentTemp `ui  1 e 2 0 ]
+"7
+[v _averageTemp averageTemp `ui  1 e 2 0 ]
+"9
+[v _Readings Readings `[10]f  1 e 40 0 ]
+"10
+[v _i i `i  1 e 2 0 ]
+[v _x x `i  1 e 2 0 ]
+[v _s s `i  1 e 2 0 ]
+"166 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S42 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"181
+[u S49 . 1 `S42 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES49  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S156 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S165 . 1 `S156 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES165  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S66 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S75 . 1 `S66 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES75  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"454
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"641
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"648
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"655
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"730
+[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
+"737
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S106 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1190
+[s S112 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S120 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S123 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S126 . 1 `S106 1 . 1 0 `S112 1 . 1 0 `S120 1 . 1 0 `S123 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES126  1 e 1 @31 ]
+"1255
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2605
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2662
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"2665
+[v _RA3 RA3 `VEb  1 e 0 @43 ]
+"2668
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"2671
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2887
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"2890
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"2893
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2896
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1121 ]
+"2899
+[v _TMR2IF TMR2IF `VEb  1 e 0 @97 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2929
+[v _TRISA4 TRISA4 `VEb  1 e 0 @1068 ]
+"2932
+[v _TRISA5 TRISA5 `VEb  1 e 0 @1069 ]
+"2935
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"2938
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"2947
+[v _TRISB4 TRISB4 `VEb  1 e 0 @1076 ]
+"2950
+[v _TRISB5 TRISB5 `VEb  1 e 0 @1077 ]
+"2965
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"2974
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"3 C:\Users\Admin\MPLABXProjects\Electric Heater.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"11
+} 0
+"88 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Init.h
+[v _SysInit SysInit `(v  1 e 1 0 ]
+{
+"96
+} 0
+"76
+[v _Timer2Init Timer2Init `(v  1 e 1 0 ]
+{
+"83
+} 0
+"67
+[v _Timer1Init Timer1Init `(v  1 e 1 0 ]
+{
+"75
+} 0
+"48
+[v _SevenSegInit SevenSegInit `(v  1 e 1 0 ]
+{
+"56
+} 0
+"84
+[v _OnOff_Int_Init OnOff_Int_Init `(v  1 e 1 0 ]
+{
+"87
+} 0
+"45
+[v _LEDInit LEDInit `(v  1 e 1 0 ]
+{
+"47
+} 0
+"61
+[v _ElementInit ElementInit `(v  1 e 1 0 ]
+{
+"66
+} 0
+"40
+[v _ButtonsInit ButtonsInit `(v  1 e 1 0 ]
+{
+"44
+} 0
+"116 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _SettingMode SettingMode `(v  1 e 1 0 ]
+{
+"124
+[v SettingMode@z z `i  1 a 2 35 ]
+"122
+[v SettingMode@k k `i  1 a 2 39 ]
+"119
+[v SettingMode@y y `i  1 a 2 37 ]
+"134
+} 0
+"64
+[v _TempSet TempSet `(i  1 e 2 0 ]
+{
+"84
+} 0
+"31
+[v _TempDisplay TempDisplay `(v  1 e 1 0 ]
+{
+"32
+[v TempDisplay@b b `ui  1 a 2 30 ]
+[v TempDisplay@a a `ui  1 a 2 28 ]
+"49
+} 0
+"24
+[v _SaveTemp SaveTemp `(v  1 e 1 0 ]
+{
+"27
+} 0
+"23 C:\Users\Admin\MPLABXProjects\Electric Heater.X/I2C_EEPROM.h
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+[v I2C_Master_Init@baud baud `DCul  1 p 4 18 ]
+"30
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 13 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 17 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 8 ]
+"30
+} 0
+"72 C:\Users\Admin\MPLABXProjects\Electric Heater.X/I2C_EEPROM.h
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+"79
+[v EEPROM_Write@i i `ui  1 a 2 12 ]
+"72
+[v EEPROM_Write@add add `ui  1 p 2 5 ]
+[v EEPROM_Write@data data `*.39uc  1 p 2 7 ]
+[v EEPROM_Write@len len `uc  1 p 1 9 ]
+"82
+} 0
+"28 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _FetchTemp FetchTemp `(v  1 e 1 0 ]
+{
+"30
+} 0
+"83 C:\Users\Admin\MPLABXProjects\Electric Heater.X/I2C_EEPROM.h
+[v _EEPROM_Read EEPROM_Read `(v  1 e 1 0 ]
+{
+"92
+[v EEPROM_Read@i i `ui  1 a 2 13 ]
+"83
+[v EEPROM_Read@add add `ui  1 p 2 5 ]
+[v EEPROM_Read@data data `*.39uc  1 p 2 7 ]
+[v EEPROM_Read@len len `ui  1 p 2 9 ]
+"98
+} 0
+"53
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+{
+"61
+} 0
+"46
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 a 1 4 ]
+"52
+} 0
+"42
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"45
+} 0
+"34
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"37
+} 0
+"38
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+{
+"41
+} 0
+"62
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+{
+"66
+} 0
+"31
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"33
+} 0
+"135 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _HeatingCoolingElement HeatingCoolingElement `(v  1 e 1 0 ]
+{
+"155
+} 0
+"50
+[v _CurrentTempDisplay CurrentTempDisplay `(v  1 e 1 0 ]
+{
+"51
+[v CurrentTempDisplay@b b `ui  1 a 2 20 ]
+[v CurrentTempDisplay@a a `ui  1 a 2 18 ]
+"63
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 15 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 11 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 13 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 8 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 10 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 4 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
+"30
+} 0
+"12 C:\Users\Admin\MPLABXProjects\Electric Heater.X/ISRs.h
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"62
+} 0
+"111 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _TempSensor TempSensor `(v  1 e 1 0 ]
+{
+"115
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S616 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S621 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S624 . 4 `l 1 i 4 0 `d 1 f 4 0 `S616 1 fAsBytes 4 0 `S621 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S624  1 a 4 20 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 14 ]
+[s S693 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S696 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S693 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S696  1 a 2 24 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 19 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 18 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 13 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"85 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Temperature.h
+[v _AverageTemp AverageTemp `(v  1 e 1 0 ]
+{
+"105
+[v AverageTemp@j_294 j `i  1 a 2 73 ]
+"98
+[v AverageTemp@j_293 j `i  1 a 2 71 ]
+"91
+[v AverageTemp@j j `i  1 a 2 65 ]
+"87
+[v AverageTemp@tmp tmp `f  1 a 4 75 ]
+"86
+[v AverageTemp@reading reading `f  1 a 4 67 ]
+"110
+} 0
+"135
+[v i1_HeatingCoolingElement HeatingCoolingElement `(v  1 e 1 0 ]
+{
+"155
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 61 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 60 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 52 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 46 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 39 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 44 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 51 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 50 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 43 ]
+"8
+[v ___fldiv@a a `d  1 p 4 26 ]
+[v ___fldiv@b b `d  1 p 4 30 ]
+"185
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 11 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 8 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"11 C:\Users\Admin\MPLABXProjects\Electric Heater.X/ADC.h
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+"19
+} 0
+"57 C:\Users\Admin\MPLABXProjects\Electric Heater.X/Init.h
+[v _ADCInit ADCInit `(v  1 e 1 0 ]
+{
+"60
+} 0

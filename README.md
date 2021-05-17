@@ -1,6 +1,7 @@
 # Electric Heater
-This is an electric heater control system, where the temperature of water tank is controlled by heating/cooling systems.
+This is a heater control system, where the tempreture is controlled to the desired value by means of heating and cooling systems.
 This project is implemented using PIC16F877A microcontroller, and run on PICGenios simulator.
+All code is written in C.
 
 ## Layout
 <ul>
